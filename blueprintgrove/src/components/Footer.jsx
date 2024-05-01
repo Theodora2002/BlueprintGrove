@@ -6,10 +6,12 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa6";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
     <footer className="bg-darkblue">
+    <NewsletterForm />
       <section className=" text-whiiteish">
         <section id="footer-repeat">
           <div>
