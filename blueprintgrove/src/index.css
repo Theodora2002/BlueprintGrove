@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    @apply font-mulish
+}
+nav > section {
+    @apply mx-auto px-[15%]
+}
+#icons > *{
+    @apply ml-3
+}
+#top-nav{
+    @apply bg-whiiteish flex flex-row text-xs font-medium text-darkblue py-4 justify-between
+}
+#middle-nav{
+    
+}
