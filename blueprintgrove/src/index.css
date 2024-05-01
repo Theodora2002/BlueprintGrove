@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 *{
-    @apply font-mulish
+    @apply font-mulish text-darkblue
 }
 nav > section {
     @apply mx-auto px-[15%]
@@ -16,5 +16,21 @@ nav > section {
     @apply bg-whiiteish flex flex-row text-xs font-medium text-darkblue py-4 justify-between
 }
 #middle-nav{
-    
+    @apply text-3xl font-bold pt-6 flex flex-row pb-12 justify-between
+}
+#info-nav h3{
+    @apply text-lg text-darkblue font-semibold
+}
+#info-nav p{
+    @apply text-sm text-greyish font-normal
+}
+#float-nav{
+    @apply bg-orangeyellow flex flex-row py-5 mx-auto w-[68%] font-semibold px-3 justify-between
+
+}
+#float-nav>div>a{
+    @apply mr-4
+}
+#float-nav>a:nth-of-type(7){
+    align-self: flex-end;
 }
