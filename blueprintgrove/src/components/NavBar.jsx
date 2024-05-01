@@ -5,6 +5,8 @@ import {
   FaLocationDot,
   FaPhone,
   FaEnvelope,
+  FaChevronDown,
+  FaChevronUp
 } from "react-icons/fa6";
 export default function NavBar() {
   return (
@@ -59,10 +61,10 @@ export default function NavBar() {
         </div>
       </section>
       <nav id="float-nav" className="absolute bottom-[-40px] left-[16%]">
-        <div>
+        <div className="flex">
             <a href="">Home</a>
             <a href="">About Us</a>
-            <a href="">Pages</a>
+            <a href="" className="flex">Pages <FaChevronDown className="w-3 h-3 mt-[4.5px] ml-1" /></a>
             <a href="">Services</a>
             <a href="">Blog</a>
             <a href="">Contact Us</a>

@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+body{
     @apply font-mulish text-darkblue
 }
 nav > section {
@@ -11,6 +11,9 @@ nav > section {
 }
 #icons > *{
     @apply ml-3
+}
+footer #icons>a{
+    @apply rounded-full bg-[#2C3765] p-3
 }
 #top-nav{
     @apply bg-whiiteish flex flex-row text-xs font-medium text-darkblue py-4 justify-between
@@ -29,8 +32,41 @@ nav > section {
 
 }
 #float-nav>div>a{
-    @apply mr-4
+    @apply mr-5
 }
 #float-nav>a:nth-of-type(7){
     align-self: flex-end;
+}
+#footer-repeat{
+    @apply text-3xl font-bold py-6 flex flex-row justify-between border-b-[1px] border-greyish text-darkblue
+}
+#footer-repeat p{
+    @apply text-sm text-whiiteish font-normal
+}
+footer{
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#footer-repeat h3{
+    @apply text-lg text-whiiteish font-semibold
+}
+footer section{
+    @apply mx-auto w-[85%]
+}
+#segments{
+    text-align: justify;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-top: 20px;
+    @apply pb-5 border-b-[1px] border-b-greyish
+}
+#links{
+    color: #f4f4f4;
+}
+ul>a{
+    @apply text-xs font-normal
 }
