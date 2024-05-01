@@ -6,12 +6,10 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa6";
-import { IconContext } from "react-icons";
 
 export default function Footer() {
   return (
     <footer className="bg-darkblue">
-      <section></section>
       <section className=" text-whiiteish">
         <section id="footer-repeat">
           <div>
