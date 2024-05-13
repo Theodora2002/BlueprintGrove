@@ -10,7 +10,7 @@ import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
-    <footer className="bg-darkblue">
+    <footer className="bg-darkblue" id="footer">
     <NewsletterForm />
       <section className=" text-whiiteish">
         <section id="footer-repeat">

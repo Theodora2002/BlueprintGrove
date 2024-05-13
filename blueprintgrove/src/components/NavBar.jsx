@@ -62,12 +62,12 @@ export default function NavBar() {
       </section>
       <nav id="float-nav" className="absolute bottom-[-40px] left-[16%]">
         <div className="flex">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="" className="flex">Pages <FaChevronDown className="w-3 h-3 mt-[4.5px] ml-1" /></a>
-            <a href="">Services</a>
+            <a href="/">Home</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/projects" className="flex">Projects</a>
+            <a href="/services">Services</a>
             <a href="">Blog</a>
-            <a href="">Contact Us</a>
+            <a href="#footer">Contact Us</a>
         </div>
         <a  className="px-3 my-[-10px] bg-darkblue text-whiiteish text-center py-2" href="">Have Any Questions?</a>
       </nav>
