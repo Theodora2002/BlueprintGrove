@@ -60,7 +60,7 @@ export default function NavBar() {
           </div>
         </div>
       </section>
-      <nav id="float-nav" className="absolute bottom-[-40px] left-[16%]">
+      <nav id="float-nav" className="absolute bottom-[-40px] left-[16%] z-50">
         <div className="flex">
             <a href="/">Home</a>
             <a href="/aboutus">About Us</a>
