@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import AboutUs from "./pages/AboutUs"
 import Services from "./pages/Services";
 import OurProject from "./pages/OurProject";
+import The404 from "./pages/404";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/services" element={<Services />} />
       <Route path="/projects" element={<OurProject />} />
+      <Route path="*" element={<The404 />}/>
     </Routes>
   );
 }
