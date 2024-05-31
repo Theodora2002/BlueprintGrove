@@ -67,6 +67,7 @@ ul>a{
     @apply text-xs font-normal
 }
 #aboutushero{
-    background-image: url('/blueprintgrove/src/assets/img.png');
+    background-image: url('./assets/photo-1551711974-faf378be34b2.avif');
     background-size: cover;
+    background-position: center;
 }
