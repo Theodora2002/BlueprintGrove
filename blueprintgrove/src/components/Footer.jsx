@@ -82,7 +82,7 @@ export default function Footer() {
               <a href="">About Us</a>
               <a href="">Gallery</a>
               <a href="">Offers</a>
-              <a href="">Pricing</a>
+              <a href="/pricing">Pricing</a>
               <a href="">FAQ</a>
             </ul>
             <ul className=" text-whiiteish flex flex-col">

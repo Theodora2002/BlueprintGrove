@@ -6,7 +6,7 @@ export default function The404() {
   return (
     <>
       <NavBar />
-      <section id="aboutushero" className="w-full h-[50vh]">
+      <section id="aboutushero" className="w-full h-[40vh]">
         <div className="w-full h-full flex flex-row justify-center items-center backdrop-blur-sm">
           <p className=" text-whiiteish text-3xl font-bold">Page Not Found</p>
         </div>
@@ -17,7 +17,7 @@ export default function The404() {
         <p className="text-center text-xs my-4">
           Sorry, but the page you are looking for does not existing
         </p>
-        <Link className="text-xs py-2 px-3 bg-orangeyellow ml-[47%]" to="/">Go To Home</Link>
+        <Link className="text-xs py-2 px-3 bg-orangeyellow ml-[47%] font-semibold" to="/">Go To Home</Link>
       </section>
       <Footer />
     </>

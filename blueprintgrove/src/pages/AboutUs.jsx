@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <>
       <NavBar />
-      <section id="aboutushero" className="w-full h-[50vh]">
+      <section id="aboutushero" className="w-full h-[40vh]">
         <div className="w-full h-full flex flex-row justify-center items-center backdrop-blur-sm">
           <p className=" text-whiiteish text-3xl font-bold">About Us</p>
         </div>
@@ -160,17 +160,17 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
-              <div className="p-4 border-greyish border-[1px]">
+              <div className="p-4 border-[#D2D2D2] border-[1px] shadow-lg">
                 <p className="w-[330px] h-[340px] ">pic</p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>
               </div>
-              <div className="p-4  border-greyish border-[1px]">
+              <div className="p-4  border-[#D2D2D2] border-[1px] shadow-lg">
                 <p className="w-[330px] h-[340px]">pic</p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>
               </div>
-              <div className="p-4 border-greyish border-[1px]">
+              <div className="p-4 border-[#D2D2D2] border-[1px] shadow-lg">
                 <p className="w-[330px] h-[340px]">pic</p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>

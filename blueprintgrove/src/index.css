@@ -71,3 +71,8 @@ ul>a{
     background-size: cover;
     background-position: center;
 }
+#projoushero{
+    background-image: url('./assets/photo-1593313637552-29c2c0dacd35.avif');
+    background-size: cover;
+    background-position: bottom;
+}
