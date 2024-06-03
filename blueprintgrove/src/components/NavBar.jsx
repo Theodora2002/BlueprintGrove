@@ -67,7 +67,7 @@ export default function NavBar() {
             <a href="/projects" className="flex">Projects</a>
             <a href="/services">Services</a>
             <a href="">Blog</a>
-            <a href="#footer">Contact Us</a>
+            <a href="/contactus">Contact Us</a>
         </div>
         <a  className="px-3 my-[-10px] bg-darkblue text-whiiteish text-center py-2" href="">Have Any Questions?</a>
       </nav>

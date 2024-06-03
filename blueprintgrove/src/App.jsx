@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import OurProject from "./pages/OurProject";
 import The404 from "./pages/404";
 import Pricing from "./pages/pricing";
+import ContactUs from "./pages/ContactUs";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/projects" element={<OurProject />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/contactus" element={<ContactUs />} />
       <Route path="*" element={<The404 />}/>
     </Routes>
   );

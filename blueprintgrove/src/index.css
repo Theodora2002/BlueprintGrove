@@ -76,3 +76,13 @@ ul>a{
     background-size: cover;
     background-position: bottom;
 }
+#pricinghero{
+    background-image: url('./assets/sparkles.avif');
+    background-size: cover;
+    background-position: center;
+}
+#hero{
+    background-image: url('./assets/photo-1551711974-faf378be34b2.avif');
+    background-size: cover;
+    background-position: center;
+}
