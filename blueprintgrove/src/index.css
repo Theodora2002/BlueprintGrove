@@ -81,8 +81,21 @@ ul>a{
     background-size: cover;
     background-position: center;
 }
-#hero{
+#contacthero{
     background-image: url('./assets/photo-1551711974-faf378be34b2.avif');
     background-size: cover;
     background-position: center;
+}
+#contactUsForm input[type="text"],input[type="email"],input[type="tel"],input[type="url"]{
+    background-color: white;
+    border-width: 1px;
+    border-color: #F4F4F4;
+    padding-left: 15px;
+    color: #7E7E7E;
+    font-size: small;
+}:focus{
+    outline: none;
+}
+#SubmitBt{
+    @apply  bg-orangeyellow text-darkblue py-2 text-sm font-semibold mx-[42.5%] w-[15%]
 }
