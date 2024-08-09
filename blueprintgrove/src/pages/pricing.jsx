@@ -1,8 +1,59 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import { FaPenToSquare, FaCircleCheck } from "react-icons/fa6";
+import { FaCircleCheck, FaCircleXmark } from "react-icons/fa6";
+import PricingAd from "../components/pricingAd";
 
 export default function Pricing() {
+  const plans = [
+    {
+      title: "Basic Plan",
+      price: "$599.00",
+      services: [
+        { name: "Electrical Service Repairs, Upgrades", included: true },
+        { name: "Distribution Power Systems", included: true },
+        { name: "High & Medium Voltage Substations", included: true },
+        { name: "Switch Installation", included: true },
+        { name: "Industrial Control Systems", included: true },
+        { name: "Generator Installations", included: true },
+        { name: "Innovative Construction Alternatives", included: false },
+        { name: "PLC Controls", included: false },
+        { name: "Conveyor Systems", included: true },
+        { name: "Wiring Renovations", included: true },
+      ],
+    },
+    {
+      title: "Standard",
+      price: "$699.00",
+      services: [
+        { name: "Electrical Service Repairs, Upgrades", included: true },
+        { name: "Distribution Power Systems", included: true },
+        { name: "High & Medium Voltage Substations", included: true },
+        { name: "Switch Installation", included: true },
+        { name: "Industrial Control Systems", included: true },
+        { name: "Generator Installations", included: true },
+        { name: "Innovative Construction Alternatives", included: false },
+        { name: "PLC Controls", included: false },
+        { name: "Conveyor Systems", included: true },
+        { name: "Wiring Renovations", included: true },
+      ],
+    },
+    {
+      title: "Professional",
+      price: "$799.00",
+      services: [
+        { name: "Electrical Service Repairs, Upgrades", included: true },
+        { name: "Distribution Power Systems", included: true },
+        { name: "High & Medium Voltage Substations", included: true },
+        { name: "Switch Installation", included: true },
+        { name: "Industrial Control Systems", included: true },
+        { name: "Generator Installations", included: true },
+        { name: "Innovative Construction Alternatives", included: true },
+        { name: "PLC Controls", included: true },
+        { name: "Conveyor Systems", included: true },
+        { name: "Wiring Renovations", included: true },
+      ],
+    },
+  ];
   return (
     <>
       <NavBar />
@@ -11,191 +62,77 @@ export default function Pricing() {
           <p className=" text-whiiteish text-3xl font-bold">Pricing</p>
         </div>
       </section>
-      <section className=" py-28 bg-whiiteish">
-        <div className="w-4/6 mx-auto">
-          <div className="grid grid-cols-2 mb-10">
-            <div>
-              <p className=" bg-[#ffffff] text-xs rounded-sm text-darkblue font-semibold w-fit px-3 py-2 mb-3">
-                <FaPenToSquare className=" inline mr-1 my-auto" />
-                Subcriptions
-              </p>
-              <p className=" text-4xl font-bold">
-                Let’s Customize Work
-                <br /> With Affordable Price
-              </p>
-            </div>
-            <p className=" text-sm text-greyish w-fit h-fit text-justify my-auto">
-              Pellentesque vehicula eros neque, maximus mattis est sagittis
-              Nulla facilisi. In sed pretium metus. Proin pretium id urna sit
-              amet tincidunt. Interdum et malesuada.
-            </p>
+      <PricingAd />
+      <section className=" w-full bg-[#ffffff]">
+        <div className=" w-4/6 mx-auto my-32">
+          <p className="text-darkblue text-2xl font-bold text-center mb-4">
+            Our Packages
+          </p>
+          <p className=" text-greyish text-xs text-center mb-4">
+            Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla
+            facilisi. In
+            <br /> sed pretium metus. Proin pretium id urna sit amet tincidunt.
+          </p>
+          <div className="w-fit mx-auto mb-6">
+            <button className="px-4 py-2 bg-whiiteish text-xs text-darkblue border-orangeyellow border-[1px] ">
+              Monthly
+            </button>
+            <button className="px-4 py-2 bg-orangeyellow text-xs text-darkblue border-orangeyellow border-[1px] ">
+              Annually
+            </button>
           </div>
-          <div className="grid grid-cols-3 gap-5 mb-10">
-            <div className="bg-[#ffffff] p-8 shadow-lg">
-              <div className="grid grid-cols-2 border-b-[1px] border-b-[#D7D7D7] pb-4">
-                <p className=" font-bold text-darkblue text-xl">
-                  <span>Basic Plan</span>
-                  <br />
-                  <span>$ 599.00</span>
-                </p>
-                <p className="text-xs h-fit my-auto text-end text-greyish">
-                  Per visit charge
-                </p>
+          <div className="pricing-table bg-whiiteish pl-10 pb-8">
+            <h2 className="ml-[60%] text-xs font-bold bg-orangeyellow text-center w-[20%] py-1">POPULAR</h2>
+            <div className="table-header">
+              <div className="w-[40%]">
+                <p className="text-lg font-bold">Services</p>
               </div>
-              <div className=" text-greyish text-sm ">
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Electrical Service
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Distribution Power Systems
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  High & Medium Voltages
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Industrial Control Systems
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Switch Installation
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Generator Installations
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Innovative Construction
-                </p>
-              </div>
-              <button className="mx-auto w-full bg-orangeyellow py-2 font-bold mt-5 hover:bg-[#ffffff] hover:border-[1px] hover:border-orangeyellow hover:text-sm">
-                Buy Now
-              </button>
-            </div>
-            <div className="bg-[#ffffff] p-8 shadow-lg ">
-              <div className="grid grid-cols-2 border-b-[1px] border-b-[#D7D7D7] pb-4">
-                <p className=" font-bold text-darkblue text-xl">
-                  <span>Standard</span>
-                  <br />
-                  <span>$ 699.00</span>
-                </p>
-                <p className="text-xs h-fit my-auto text-end text-greyish">
-                  <p className=" bg-orangeyellow px-2 py-1 w-fit ml-[2.5rem] text-darkblue font-bold">
-                    POPULAR
+              {plans.map((plan) => (
+                <div
+                  key={plan.title}
+                  className="plan-header w-[20%] text-center"
+                >
+                  <h3 className="text-base font-bold">{plan.title}</h3>
+                  <p>
+                    {plan.price} <br /> Per Visit Charge
                   </p>
-                  Per visit charge
-                </p>
-              </div>
-              <div className=" text-greyish text-sm ">
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  PLC Controls
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Conveyor systems
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Wiring enivations
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Electric Water Heater Repair
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Service And Panel Upgrades
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Efficient Lighting Solutions
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Site lighting
-                </p>
-              </div>
-              <button className="mx-auto w-full bg-orangeyellow py-2 font-bold mt-5 hover:bg-[#ffffff] hover:border-[1px] hover:border-orangeyellow hover:text-sm">
-                Buy Now
-              </button>
+                </div>
+              ))}
             </div>
-            <div className="bg-[#ffffff] p-8 shadow-lg">
-              <div className="grid grid-cols-2 border-b-[1px] border-b-[#D7D7D7] pb-4">
-                <p className=" font-bold text-darkblue text-xl">
-                  <span>Professional</span>
-                  <br />
-                  <span>$ 799.00</span>
-                </p>
-                <p className="text-xs h-fit my-auto text-end text-greyish">
-                  Per visit charge
-                </p>
-              </div>
-              <div className=" text-greyish text-sm ">
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Cable Tray Installations
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Wiring Upgrades
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Energy Efficient Lighting
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Emergency Generating
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Pools And Hot Tubs
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Air Conditioning Units
-                </p>
-                <p className="mt-4">
-                  <FaCircleCheck className="inline mr-2 text-orangeyellow" />
-                  Generating Systems
-                </p>
-              </div>
-              <button className="mx-auto w-full bg-orangeyellow py-2 font-bold mt-5 hover:bg-[#ffffff] hover:border-[1px] hover:border-orangeyellow hover:text-sm">
-                Buy Now
-              </button>
+            <div className="table-body ">
+              {plans[0].services.map((service, index) => (
+                <div
+                  key={index}
+                  className="service-row border-y-[1.5px] border-[#D7D7D7]"
+                >
+                  <div className="text-greyish text-xs w-[40%]">
+                    {service.name}
+                  </div>
+                  {plans.map((plan) => (
+                    <div key={plan.title} className="plan-cell w-[20%] h-full">
+                      {plan.services[index].included ? (
+                        <FaCircleCheck className="mx-auto" />
+                      ) : (
+                        <FaCircleXmark className="mx-auto" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <div>
-              <p className=" text-darkblue font-bold text-base">
-                <FaCircleCheck className="inline text-orangeyellow mr-3" />
-                Afordable pice
-              </p>
-              <p className=" text-justify pl-6 text-greyish text-sm mt-1">
-                lacinia, tempor lacus at, eleifend diam. Maecenas tempus
-                tincidunt placeratneque, maximus mattis
-              </p>
-            </div>
-            <div>
-              <p className=" text-darkblue font-bold text-base">
-                <FaCircleCheck className="inline text-orangeyellow mr-3" />
-                Fixed Plan
-              </p>
-              <p className=" text-justify pl-6 text-greyish text-sm mt-1">
-                Pellentesque vehicula eros neque, maximus mattis est sagittis
-                Nulla facilisi. In sed pretium
-              </p>
+            <div className="table-footer">
+              <div className="w-[40%] h-full"></div>
+              {plans.map((plan) => (
+                <button
+                  key={plan.title}
+                  className="w-[15%] bg-orangeyellow text-darkblue text-xs font-bold mx-auto  py-3 mt-5"
+                >
+                  Buy Now
+                </button>
+              ))}
             </div>
           </div>
         </div>
-      </section>
-      <section className=" w-full bg-[#ffffff]">
-        <div className=" w-4/6 mx-auto "></div>
       </section>
       <Footer />
     </>

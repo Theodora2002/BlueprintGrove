@@ -79,7 +79,7 @@ export default function Footer() {
           >
             <ul className=" text-whiiteish flex flex-col">
               <h4 className="font-bold">Explore</h4>
-              <a href="">About Us</a>
+              <a href="/aboutus">About Us</a>
               <a href="">Gallery</a>
               <a href="">Offers</a>
               <a href="/pricing">Pricing</a>
@@ -87,9 +87,9 @@ export default function Footer() {
             </ul>
             <ul className=" text-whiiteish flex flex-col">
               <h4 className="font-bold">Quick Links</h4>
-              <a href="">Services</a>
+              <a href="/services">Services</a>
               <a href="">Blog</a>
-              <a href="">Contact Us</a>
+              <a href="/contactus">Contact Us</a>
               <a href="">Service Request</a>
               <a href="">Estimation Calculator</a>
             </ul>

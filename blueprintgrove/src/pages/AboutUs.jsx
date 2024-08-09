@@ -10,7 +10,7 @@ export default function AboutUs() {
           <p className=" text-whiiteish text-3xl font-bold">About Us</p>
         </div>
       </section>
-      <section className="h-[100vh] w-full mt-20">
+      <section className="h-[80vh] w-full mt-20">
         <div className="grid grid-cols-2 gap-[4.5rem] w-4/6 mx-auto">
           <div>
             <p className=" bg-whiiteish text-xs rounded-sm text-darkblue font-semibold w-fit px-2 py-1">
@@ -161,17 +161,17 @@ export default function AboutUs() {
             </div>
             <div className="grid grid-cols-3 gap-4">
               <div className="p-4 border-[#D2D2D2] border-[1px] shadow-lg">
-                <p className="w-[330px] h-[340px] ">pic</p>
+                <p className="w-full h-[340px] num1"></p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>
               </div>
               <div className="p-4  border-[#D2D2D2] border-[1px] shadow-lg">
-                <p className="w-[330px] h-[340px]">pic</p>
+                <p className="w-[330px] h-[340px] num2"></p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>
               </div>
               <div className="p-4 border-[#D2D2D2] border-[1px] shadow-lg">
-                <p className="w-[330px] h-[340px]">pic</p>
+                <p className=" h-[340px] num3"></p>
                 <p className="text-center font-bold text-lg">David James</p>
                 <p className="text-center text-xs">Engineer</p>
               </div>
